@@ -5,10 +5,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class MusicbrainzApplication {
+    public static void main(String[] args) {
+        /*
+        Chris Huang-Leaver
 
-	public static void main(String[] args) {
-
-		SpringApplication.run(MusicbrainzApplication.class, args);
-	}
-
+        Coles MusicBrainz test
+         */
+        SpringApplication.run(MusicbrainzApplication.class, args);
+    }
 }
