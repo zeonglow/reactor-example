@@ -34,18 +34,18 @@ This is an interesting challenge as straight away we have hit philosophy on Agil
 
 Are tickets contracts or are they invitations to conversations?
 
-An endpoint which returns two different types of objects increases the complexity;  ignore Java static typing for a moment,  lets say I had implemented this in Python.  The API consumer has to either do some type of 'guess' to see which object it received or we force always returning one type of object, i.e have a wrapper object,  along the lines of:
+An endpoint which returns two different types of objects increases the complexity;  ignore Java static typing for a moment,  lets say I had implemented this in Python.  The API consumer has to either do some type of 'guess' to see which object it received, or we force always returning one type of object, i.e have a wrapper object,  along the lines of:
 
 ```
 {
 type="artist"
-artists=[...]
+data=[...]
 }
 ```
 
 Perhaps if we narrowed the search criteria down; limit the search to Australian artists only say, maybe, it still seems unlikely to be that useful and the spec doesn't say that. It's easy to make code more complicated,  making it simple again is hard,  reclaiming all the time spent making it needlessly complex in the first place is impossible.
 
-One thing I notice while playing; The first artist returned by a simple search, at least for most of the artists I could think of, came top of the list, so implementing a "I feel lucky" type endpoint seemed like a good approach. It has a similar level of complexity for demonstration of coding skills yet is more useful. We also have endpoints for retrieval of all the artists and all the releases for a given artist id.
+One thing I noticed while playing; The first artist returned by a simple search, at least for most of the artists I could think of, came top of the list, so implementing a "I feel lucky" type endpoint seemed like a good approach. It has a similar level of complexity for demonstration of coding skills yet is more useful. We also have endpoints for retrieval of all the artists and all the releases for a given artist id.
 
 
 ### Endpoints Exposed
